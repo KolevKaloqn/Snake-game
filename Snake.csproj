@@ -1,0 +1,43 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>disable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Assets\SnakeAssets\**" />
+    <EmbeddedResource Remove="Assets\SnakeAssets\**" />
+    <None Remove="Assets\SnakeAssets\**" />
+    <Page Remove="Assets\SnakeAssets\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Assets\Body.png" />
+    <None Remove="Assets\DroidSansMono.ttf" />
+    <None Remove="Assets\Empty.png" />
+    <None Remove="Assets\Food.png" />
+    <None Remove="Assets\icon.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\Body.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\DroidSansMono.ttf">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Empty.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Food.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\icon.ico">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+</Project>
